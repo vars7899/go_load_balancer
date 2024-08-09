@@ -2,6 +2,10 @@
 
 A simple and efficient load balancer implemented in Go. This project aims to distribute incoming network traffic across multiple servers to ensure high availability and reliability.
 
+### Preview
+
+![Load Balancer](/docs/s1.png "Load balancer")
+
 ## Features
 
 - **Dynamic Server Pool**: Automatically manage a pool of servers.
@@ -65,7 +69,7 @@ To start the load balancer, run:
   hey -n 20000 -c 100 http://localhost:8080/lb
 ```
 
-# mock server cluster
+### mock server cluster
 
 ```go
   package main
