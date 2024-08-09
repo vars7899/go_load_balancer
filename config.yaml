@@ -1,0 +1,19 @@
+lb_port: 8080
+max_retry_limit: 3
+# default round-robin
+# weighted-round-robin
+# least-connection
+strategy: least-connection
+health_check_interval: "5s"
+servers:
+  - "http://localhost:8081"
+  - "http://localhost:8082"
+  - "http://localhost:8083"
+  - "http://localhost:8084"
+  - "http://localhost:8085"
+server_weights:
+  - 2
+  - 1
+  - 1
+  - 1
+  - 1
